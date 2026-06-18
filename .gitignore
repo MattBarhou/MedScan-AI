@@ -1,0 +1,84 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+
+# Virtual environments (any location)
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+
+# --- Node / Next.js ---
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+
+# --- Secrets & local config ---
+.env
+.env.*
+!.env.example
+
+# --- Dataset (large; add locally after clone) ---
+data/**/*
+!data/**/
+!data/**/.gitkeep
+
+# --- Model weights (train locally or download separately) ---
+models/**/*
+!models/
+!models/.gitkeep
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.h5
+*.pkl
+*.joblib
+
+# --- Generated reports & experiment outputs ---
+reports/**/*
+!reports/
+!reports/.gitkeep
+wandb/
+mlruns/
+runs/
+lightning_logs/
+
+# --- Upload / temp files ---
+backend/temp/
+*.tmp
+*.temp
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- IDE / editor ---
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
